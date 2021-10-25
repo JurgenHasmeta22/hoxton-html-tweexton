@@ -1,0 +1,108 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*START OF CREATING LAYOUT WITH CSS GRIDS */
+section.container-menus {
+    height: 100vh;
+    display: grid;
+    /* grid-template-rows: auto 1fr; */
+    grid-template: 
+    "header" auto
+    "main" 1fr /
+    1fr;
+    /* grid-gap: 30px; */
+}
+
+header.header-menu {
+    grid-area: header;
+    outline: 1px solid #000;
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
+    background-color: #2565AE;
+}
+
+main.main-menu {
+    grid-area: main;
+    outline: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.875rem;
+    align-content: start;
+    place-items: center;
+}
+
+main.main-menu .main-content {
+    display: grid;
+    padding-top: 3.125rem;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-gap: 20px;
+}
+
+main.main-menu .main-content .main-content-inside-2 {
+    grid-gap: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* height: 150px;
+    outline: 1px solid #2565AE; */
+}
+
+main.main-menu .main-content .main-content-inside-2 .post {
+    /* height: auto; */
+    padding: 20px 20px;
+    display: grid;
+    grid-template: 
+    "img p" 0.9fr
+    "img span" 0.1fr /
+    0.2fr auto;
+    grid-gap: 10px;
+    outline: 1px solid #2565AE;
+}
+
+main.main-menu .main-content .main-content-inside-2 .post p {
+    grid-area: p;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    width: 40ch;
+    line-height: 20px;
+}
+
+main.main-menu .main-content .main-content-inside-2 .post span.special-span {
+    grid-area: span;
+}
+
+main.main-menu .main-content .main-content-inside-2 .post img {
+    grid-area: img;
+    border-radius: 50%;
+}
+
+header.header-menu .header-menu-inside {
+    display: grid;
+    place-items: center;
+}  
+
+header.header-menu .header-menu-inside h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.0rem;
+    letter-spacing: 0.1rem;
+    color: #F3F7F7;
+    font-style: italic;
+    font-weight: 900;
+}
+
+main.main-menu .main-content h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    color: #2565AE;
+    font-weight: 700;
+}
