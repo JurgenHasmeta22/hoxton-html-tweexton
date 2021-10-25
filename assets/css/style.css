@@ -43,7 +43,7 @@ main.main-menu {
 main.main-menu .main-content {
     display: grid;
     padding-top: 3.125rem;
-    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-rows: auto 0.8fr;
     grid-gap: 20px;
 }
 
@@ -74,6 +74,33 @@ main.main-menu .main-content .main-content-inside-2 .post p {
     font-style: italic;
     width: 40ch;
     line-height: 20px;
+}
+
+main.main-menu .main-content .main-content-inside-2 .post .strong-post {
+    font-size: 16px;
+    font-weight: 900;
+    color:#2565AE
+}
+
+main.main-menu .main-content .main-content-inside-2 .post.inside-special {
+    background-color: #2565AE;
+}
+
+main.main-menu .main-content .main-content-inside-2 .post.inside-special p {
+    color: #F3F7F7;
+}
+
+main.main-menu .main-content .main-content-inside-2 .post.inside-special span {
+    color: #F3F7F7;
+}
+
+main.main-menu .main-content .main-content-inside-2 .post.inside-special strong {
+    color: #000;
+}
+
+main.main-menu .main-content .main-content-inside-1 h2 {
+    font-weight: 900;
+    font-size: 26px;
 }
 
 main.main-menu .main-content .main-content-inside-2 .post span.special-span {
