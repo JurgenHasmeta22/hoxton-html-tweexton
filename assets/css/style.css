@@ -44,20 +44,17 @@ main.main-menu .main-content {
     display: grid;
     padding-top: 3.125rem;
     grid-template-rows: auto 0.8fr;
-    grid-gap: 20px;
+    grid-gap: 25px;
 }
 
 main.main-menu .main-content .main-content-inside-2 {
     grid-gap: 20px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    /* height: 150px;
-    outline: 1px solid #2565AE; */
 }
 
 main.main-menu .main-content .main-content-inside-2 .post {
-    /* height: auto; */
-    padding: 20px 20px;
+    padding: 10px 10px;
     display: grid;
     grid-template: 
     "img p" 0.9fr
